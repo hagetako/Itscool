@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical" android:layout_height="match_parent" android:fadingEdge="none" android:id="@+id/Container">
+    <TableRow android:background="@drawable/header_gradient" android:layout_width="match_parent" android:id="@+id/Header" android:layout_height="50dip">
+        <ImageView android:paddingRight="5dip" android:id="@+id/AppIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingLeft="5dip" android:src="@drawable/icon"></ImageView>
+        <TextView android:layout_width="wrap_content" android:id="@string/Japp_name" android:textSize="18dip" android:layout_height="wrap_content" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:text="@string/Japp_name"></TextView>
+    </TableRow>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Body" android:orientation="vertical" android:layout_margin="10dip" android:padding="5dip">
+        <TextView android:id="@+id/From" android:text="@string/Jstr_From" android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="18dip"></TextView>
+        <Spinner android:layout_height="wrap_content" android:id="@+id/spinner_From" android:layout_width="260dip" android:layout_gravity="center_horizontal" android:layout_margin="5dip"></Spinner>
+        <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:id="@+id/Space" android:layout_height="60dip" android:gravity="center">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Arrow" android:text="@string/Arrow" android:textSize="30dip"></TextView>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="fill_parent" android:textSize="18dip" android:id="@+id/To" android:text="@string/Jstr_To"></TextView>
+        <Spinner android:layout_width="260dip" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:id="@+id/spinner_To" android:layout_margin="5dip"></Spinner>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="right" android:layout_marginRight="20dip" android:layout_marginTop="10dip" android:id="@+id/Go" android:text="@string/Jstr_gotoTimetable"></Button>
+    </LinearLayout>
+</LinearLayout>

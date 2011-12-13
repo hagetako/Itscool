@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Itscool!</string>
+    <string name="app_name">Itscool</string>
+    <string name="Japp_name">いつくーる</string>
+    <string name="Jstr_From">乗るバス停</string>
+    <string name="Jstr_To">降りるバス停</string>
+    <string-array name="Stations">
+        <item>JR高槻駅北</item>
+        <item>JR富田駅北</item>
+        <item>関西大学</item>
+    </string-array>
+        <string name="Arrow">↓</string>
+        <string name="Jstr_gotoTimetable">時刻表をみる</string>
+</resources>

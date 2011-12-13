@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:background="#000000" android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/Container">
+    <LinearLayout android:layout_height="50dip" android:background="@drawable/header_gradient" android:layout_width="fill_parent" android:id="@+id/Header">
+        <ImageView android:paddingRight="5dip" android:layout_height="wrap_content" android:src="@drawable/icon" android:paddingLeft="5dip" android:layout_width="wrap_content" android:id="@+id/AppIcon"></ImageView>
+        <TextView android:layout_gravity="center" android:text="@string/Japp_name" android:id="@string/Japp_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="18dip" android:textColor="#ffffff"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/Information" android:orientation="vertical" android:background="#efefef" android:layout_height="82dip">
+        <LinearLayout android:layout_height="32dip" android:id="@+id/InfoBar" android:layout_width="match_parent" android:background="#a0c044" android:orientation="horizontal" android:gravity="center">
+            <TextView android:textColor="#ffffff" android:layout_marginLeft="8dip" android:layout_height="wrap_content" android:layout_gravity="left|center_vertical" android:textSize="16dip" android:id="@+id/From" android:text="JR高槻駅北" android:layout_width="wrap_content"></TextView>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center_vertical" android:text="→" android:textColor="#fff" android:layout_margin="3dip" android:id="@+id/rightArrow"></TextView>
+            <TextView android:textColor="#fff" android:textSize="16dip" android:layout_gravity="center_vertical" android:text="関西大学" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/To"></TextView>
+            <DigitalClock android:textSize="22dip" android:textColor="#ffffff" android:layout_height="wrap_content" android:text="DigitalClock" android:clickable="false" android:id="@+id/Clock" android:layout_marginRight="10dip" android:layout_width="fill_parent" android:layout_gravity="center_vertical" android:layout_marginLeft="20dip"></DigitalClock>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/InfoArea" android:layout_width="wrap_content" android:layout_height="50dip">
+            <LinearLayout android:id="@+id/Schedule" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="top|left" android:id="@+id/HourLabel" android:gravity="center" android:background="#ddeebb" android:layout_height="50dip" android:layout_width="50dip">
+                    <TextView android:id="@+id/HourLabelText" android:textColor="#000000" android:layout_marginLeft="1dip" android:layout_gravity="center" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="18" android:textSize="32dip"></TextView>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/MinuteLabel" android:gravity="center" android:background="#eeeeee" android:layout_gravity="top|bottom" android:layout_height="50dip" android:layout_width="50dip">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dip" android:text="00" android:textColor="#000000" android:id="@+id/MinuteLabelText" android:layout_gravity="center" android:textSize="32dip"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/Message" android:background="#f0fff0" android:layout_height="fill_parent" android:layout_width="220dip" android:gravity="center">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#000000" android:layout_gravity="center_vertical" android:id="@+id/mes1" android:text="のバスは" android:textSize="13dip" android:layout_marginLeft="3dip"></TextView>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="40" android:textColor="#000000" android:layout_gravity="center_vertical" android:layout_margin="5dip" android:id="@+id/countdown" android:textSize="20dip" android:layout_marginLeft="3dip"></TextView>
+                <TextView android:textColor="#000000" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:id="@+id/mes2" android:text="分後に発車するよ" android:textSize="13dip" android:layout_marginLeft="3dip"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/TimetableLayout" android:orientation="vertical">
+        <LinearLayout android:layout_height="32dip" android:layout_width="fill_parent" android:id="@+id/TimetableLabel" android:background="#888888">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="時刻表" android:textSize="18dip" android:layout_gravity="left|center_vertical" android:layout_marginLeft="8dip" android:textColor="#ffffff" android:id="@+id/TimetableLabelText"></TextView>
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView" android:layout_height="240dip">
+            <TableLayout android:id="@+id/Timetable" android:layout_height="fill_parent" android:layout_width="fill_parent" android:background="#eee">
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/Noritai" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@+id/NoritaiButton" android:text="このバスに間に合う電車を探す" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_margin="5dip"></Button>
+    </LinearLayout>
+</LinearLayout>

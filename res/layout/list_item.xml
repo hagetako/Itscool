@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:minHeight="400px" android:orientation="horizontal" android:id="@+id/SpinnerItem" android:layout_height="40dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TextView" android:layout_gravity="center_vertical" android:textSize="20dip" android:textColor="#000" android:id="@+id/SpinnerListItem"></TextView>
+</LinearLayout>
